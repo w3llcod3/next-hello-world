@@ -1,0 +1,25 @@
+[debug] [2023-05-17T17:35:46.856Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T17:35:46.859Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-17T17:35:46.860Z] CLI Version:   11.22.0
+[debug] [2023-05-17T17:35:46.860Z] Platform:      win32
+[debug] [2023-05-17T17:35:46.860Z] Node Version:  v16.17.0
+[debug] [2023-05-17T17:35:46.862Z] Time:          Wed May 17 2023 20:35:46 GMT+0300 (Arabian Standard Time)
+[debug] [2023-05-17T17:35:46.863Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T17:35:46.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T17:35:46.991Z] > authorizing via signed-in user (wael.ghazie@gmail.com)
+[debug] [2023-05-17T17:35:46.991Z] [iam] checking project le-recipe for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-17T17:35:46.995Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/le-recipe:testIamPermissions [none]
+[debug] [2023-05-17T17:35:46.996Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/le-recipe:testIamPermissions x-goog-quota-user=projects/le-recipe
+[debug] [2023-05-17T17:35:46.996Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/le-recipe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T17:35:47.782Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/le-recipe:testIamPermissions 200
+[debug] [2023-05-17T17:35:47.783Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/le-recipe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T17:35:47.785Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/le-recipe [none]
+[debug] [2023-05-17T17:35:48.520Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/le-recipe 200
+[debug] [2023-05-17T17:35:48.521Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/le-recipe {"projectId":"le-recipe","projectNumber":"536369083362","displayName":"Le Recipe","name":"projects/le-recipe","resources":{"hostingSite":"le-recipe"},"state":"ACTIVE","etag":"1_a7af43d5-7e12-4e03-ba32-558d2631f698"}
+[debug] [2023-05-17T17:36:30.751Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:201:56)
+    at async prepareFrameworks (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:254:13)
+    at async deploy (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
